@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AgramDAOs</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Gestión de proyectos en AgramDAOs</h1>
+		<form id="formProyecto">
+			<label for="title">Título:</label>
+			<input type="text" id="title">
+			<label for="description">Descripción:</label>
+			<textarea id="description"></textarea>
+			<label for="url">URL:</label>
+			<input type="text" id="url">
+			
+			<button type="button" id="add">Agregar</button>
+			<button type="button" id="update">Actualizar</button>
+			<button type="button" id="delete">Eliminar</button>
+			<button type="button" id="load">Cargar</button>
+		</form>
+		<div class="table-container">
+			<table>
+				<thead>
+					<tr>
+						<th>Título</th>
+						<th>Descripción</th>
+						<th>URL</th>
+					</tr>
+				</thead>
+				<tbody id="table-body"></tbody>
+			</table>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
